@@ -41,12 +41,10 @@ Many individuals struggle with seeking professional help due to **stigma, cost, 
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live
 
-> Coming soon – stay tuned!  
-> *(Add your live URL here once deployed)*
+> Coming soo
 
----
 
 ## 📦 Setup Instructions
 
