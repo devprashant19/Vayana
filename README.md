@@ -1,5 +1,5 @@
 # Vayana
-An AI therapist, a companion to talk to
+An AI therepist, a companion to talk to
 
 ## Vayana AI Video Assistant
 Vayana now includes a smart video assistant powered by **Google Generative AI (Gemini)**. This feature provides:

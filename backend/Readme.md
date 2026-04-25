@@ -22,20 +22,3 @@ Top Contributer to complete all TODOs
 ## How to contribute in this open source Project
 
 First, please understand that this is not your regular project to merge your PR. This repo requires you to finish all assignments that are in controller folder. We don't accept half work, please finish all controllers and then reach us out on [Discord](https://hitesh.ai/discord) or [Twitter](https://twitter.com/@hiteshdotcom) and after checking your repo, I will add link to your repo in this readme.
-
----
-
-## NEW: Vayana AI Video Assistant
-Vayana now includes a smart video assistant powered by **Google Generative AI**. This feature provides:
-- Auto-summarization of video content
-- Smart chapter and timestamp generation
-- An interactive, animated floating widget on video pages
-
-### Setup Instructions
-To use the Vayana AI Video Assistant locally, you must provide your own Gemini API key:
-1. Obtain an API key from Google AI Studio.
-2. Create or open the `.env.local` file in the root directory.
-3. Add your key:
-```env
-NEXT_PUBLIC_GEMINI_API_KEY=your_actual_api_key_here
-```
