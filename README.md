@@ -41,18 +41,10 @@ Many individuals struggle with seeking professional help due to **stigma, cost, 
 
 ---
 
-## 🤖 New Feature: Vayana AI Video Assistant
-
-Vayana now includes a smart video assistant powered by **Google Generative AI**. This feature provides:
-- Auto-summarization of video content
-- Smart chapter and timestamp generation
-- An interactive, animated floating widget on video pages
-
----
-
 ## 🌐 Live
 
-> Coming soon
+> Coming soo
+
 
 ## 📦 Setup Instructions
 
@@ -67,14 +59,12 @@ cd Vayana
 npm install
 ```
 ### 3. Set up environment variables
-Create a `.env.local` file in the root and add:
+Create a .env.local file in the root and add:
 ```bash
-# Frontend
+#Frontend
 DATABASE_URL=your_postgres_connection
 AGENT_ID=your_ai_agent_id
 XI_API_KEY=your_agent_api_key
-NEXT_PUBLIC_GEMINI_API_KEY=your_google_gemini_api_key
-
 # Backend 
 MONGODB_URI=your_mongodb_connection
 DATABASE_URL=your_postgres_connection
@@ -90,13 +80,11 @@ PORT=your_port
 ```
 ### 4. Run the app
 This project is currently under development and may encounter some issues
-
-**Frontend**
+Frontend
 ```bash
 npm run dev
 ```
-
-**Backend**
+Backend
 ```bash
 npm run start
 ```

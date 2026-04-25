@@ -23,7 +23,7 @@ export default function SignupFormDemo() {
     setIsSubmitting(false);
   };
 
-  const handleInputChange = (field: string, value: any) => {
+  const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
@@ -56,7 +56,7 @@ export default function SignupFormDemo() {
                 placeholder="Tyler"
                 label="First name"
                 value={formData.firstname}
-                onChange={(value: any) => handleInputChange("firstname", value)}
+                onChange={(value: string) => handleInputChange("firstname", value)}
                 onFocus={() => setFocusedField("firstname")}
                 onBlur={() => setFocusedField("")}
                 focused={focusedField === "firstname"}
@@ -67,7 +67,7 @@ export default function SignupFormDemo() {
                 placeholder="Durden"
                 label="Last name"
                 value={formData.lastname}
-                onChange={(value: any) => handleInputChange("lastname", value)}
+                onChange={(value: string) => handleInputChange("lastname", value)}
                 onFocus={() => setFocusedField("lastname")}
                 onBlur={() => setFocusedField("")}
                 focused={focusedField === "lastname"}
@@ -81,7 +81,7 @@ export default function SignupFormDemo() {
               placeholder="projectmayhem@fc.com"
               label="Email Address"
               value={formData.email}
-              onChange={(value: any) => handleInputChange("email", value)}
+              onChange={(value: string) => handleInputChange("email", value)}
               onFocus={() => setFocusedField("email")}
               onBlur={() => setFocusedField("")}
               focused={focusedField === "email"}
@@ -94,7 +94,7 @@ export default function SignupFormDemo() {
               placeholder="25"
               label="Age"
               value={formData.age}
-              onChange={(value: any) => handleInputChange("age", value)}
+              onChange={(value: string) => handleInputChange("age", value)}
               onFocus={() => setFocusedField("age")}
               onBlur={() => setFocusedField("")}
               focused={focusedField === "age"}
@@ -108,7 +108,7 @@ export default function SignupFormDemo() {
                 placeholder="••••••••"
                 label="Password"
                 value={formData.password}
-                onChange={(value: any) => handleInputChange("password", value)}
+                onChange={(value: string) => handleInputChange("password", value)}
                 onFocus={() => setFocusedField("password")}
                 onBlur={() => setFocusedField("")}
                 focused={focusedField === "password"}
