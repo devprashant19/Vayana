@@ -7,6 +7,7 @@ import TextAnimation from '../../components/TextAnimation';
 import { X } from 'react-feather';
 import Message from '../../components/Message';
 import { v4 as uuidv4 } from 'uuid';
+import AIAssistant from '../../components/AIAssistant';
 
 export default function () {
   const { slug } = useParams();
@@ -116,5 +117,6 @@ export default function () {
           </div>
         </div>
       )}
+      <AIAssistant videoTitle={`Video ${slug as string}`} />
       </>;
 }
