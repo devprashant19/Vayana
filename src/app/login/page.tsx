@@ -11,7 +11,7 @@ export default function LoginFormDemo() {
   const [showPassword, setShowPassword] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     // Simulate form submission
@@ -20,7 +20,7 @@ export default function LoginFormDemo() {
     setIsSubmitting(false);
   };
 
-  const handleInputChange = (field, value) => {
+  const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
@@ -161,7 +161,20 @@ export default function LoginFormDemo() {
   );
 }
 
-const FloatingLabelInput = ({ id, type, placeholder, label, value, onChange, onFocus, onBlur, focused, className = "" }) => {
+type FloatingLabelInputProps = {
+  id: string;
+  type: string;
+  placeholder: string;
+  label: string;
+  value: string;
+  onChange: (value: string) => void;
+  onFocus: () => void;
+  onBlur: () => void;
+  focused: boolean;
+  className?: string;
+};
+
+const FloatingLabelInput: React.FC<FloatingLabelInputProps> = ({ id, type, placeholder, label, value, onChange, onFocus, onBlur, focused, className = "" }) => {
   const hasValue = value && value.length > 0;
   const isActive = focused || hasValue;
 
@@ -196,7 +209,13 @@ const FloatingLabelInput = ({ id, type, placeholder, label, value, onChange, onF
   );
 };
 
-const SocialButton = ({ icon, text, onClick }) => {
+type SocialButtonProps = {
+  icon: React.ReactNode;
+  text: string;
+  onClick: () => void;
+};
+
+const SocialButton: React.FC<SocialButtonProps> = ({ icon, text, onClick }) => {
   return (
     <button
       onClick={onClick}
